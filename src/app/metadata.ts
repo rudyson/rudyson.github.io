@@ -35,6 +35,9 @@ const GeneralInfo = {
   Fullname: "Ruslan Diadiushkin",
   Position: ".NET Developer",
   Location: "Dnipro, Ukraine",
+  Pills: [".NET", "Web", "Full stack", "1y of experience"],
+  Summary:
+    "Delighted to have you visit my website. As a full-stack developer specializing in .NET technology, extensive experience encompasses the development of high-load APIs, commercial websites, and database design. Proficient in SEO optimization and cloud deployment, the focus is on creating efficient and scalable solutions. Known for a friendly demeanor, meticulous attention to detail, and a genuine eagerness to assist others.",
   Contacts: {
     LinkedIn: "https://www.linkedin.com/in/rudyson/",
     Github: "https://github.com/rudyson/",

@@ -6,7 +6,6 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 export default function Home() {
-  const skills = [".NET", "Web", "Full stack"];
   const futureSections = ["Skills", "Experience", "Education", "Hobby"];
   return (
     <div className="max-w-screen-lg w-full mx-auto max-lg:p-4">
@@ -28,18 +27,14 @@ export default function Home() {
               <span className="pl-0.5">{GeneralInfo.Location}</span>
             </p>
             <div className="flex flex-row gap-2">
-              {skills.map((skill, key) => (
+              {GeneralInfo.Pills.map((skill, key) => (
                 <Chip className="min-w-14" key={key} label={skill} variant="outlined" />
               ))}
             </div>
           </div>
         </div>
-        <Divider className="my-4" />
-        <p className="indent-6">
-          {
-            "Delighted to have you visit my website. As a full-stack developer specializing in .NET technology, extensive experience encompasses the development of high-load APIs, commercial websites, and database design. Proficient in SEO optimization and cloud deployment, the focus is on creating efficient and scalable solutions. Known for a friendly demeanor, meticulous attention to detail, and a genuine eagerness to assist others."
-          }
-        </p>
+        <Divider sx={{ my: 4 }} />
+        <p className="indent-6">{GeneralInfo.Summary}</p>
       </Paper>
       <Marquee className="my-4 py-2 gap-16" pauseOnHover={true}>
         {GeneralInfo.Feedbacks.map((feedback, key) => (
